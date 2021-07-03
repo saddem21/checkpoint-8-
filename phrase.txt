@@ -1,0 +1,31 @@
+algorithme phrase
+var
+c: char;
+n: integer;
+m: integer;
+v: integer;
+begin
+n:= 0;
+m:= 0;
+v:= 0;
+repeat {
+read(c)
+if (c <> " ")
+then {
+n:= n+1;
+}
+if (c:= " ")
+then {
+m:= m+1;
+}
+if (c:='a' or c:='e' or c:='i' or c:='y' or c:='o' or c:='u')
+then {
+v:= v+1;
+}
+
+}
+until(c:=.);
+write ("la longueur de la phrase est" , n)
+write ("le nombre de mots de la phrase est" , m)
+write ("le nombre de voyelles de la phrase est" , v)
+end
